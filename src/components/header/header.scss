@@ -1,0 +1,17 @@
+@import '../nav/nav.scss';
+
+.header{
+    background-image: url('../../images/header-background.png');
+    height: 900px;
+    &__inner {
+        padding-bottom: 40px;
+        border: solid #A1A1A1;
+        border-width: 0 0 1px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__nav {
+        width: 563px;
+        padding: 40px 405px 0 0;
+    }
+}

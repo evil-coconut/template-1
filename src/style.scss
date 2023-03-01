@@ -1,4 +1,7 @@
-body {
-    color: red;
-    font-size: 40px;
+@import './components/header/header.scss';
+
+* {
+    margin: 0;
+    padding: 0;
 }
+
