@@ -1,0 +1,5 @@
+mixin nav(obj)
+    ul.nav
+        each val, key in obj
+            li.nav__item
+                a.nav__link(href=val) #{key} 
