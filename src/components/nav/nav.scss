@@ -1,5 +1,4 @@
 .nav {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -9,7 +8,6 @@
     &__item {}
     &__link{
         color: #FFFFFF;
-        text-decoration: none;
     }
     &__link:hover {
         padding-bottom: 39px;
