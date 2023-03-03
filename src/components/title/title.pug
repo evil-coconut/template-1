@@ -1,10 +1,10 @@
 mixin title(tag, text, color)
     .title
         case tag 
-            when h1 
+            when 'h1' 
                 h1(class ='title__h1 ' + color) #{text} 
-            when h2 
+            when 'h2' 
                 h2(class ='title__h2 ' + color) #{text}
-            when h3 
+            when 'h3' 
                 h3(class ='title__h3 ' + color) #{text}
 
