@@ -1,0 +1,11 @@
+include ../title/title.pug
+
+mixin services(title, text)
+    .services 
+        .services__img 
+            include ../picture/picture.pug
+        .services__inner
+            .services__title 
+                +title('h3', 'Создание сайтов', black)
+            .services__text 
+                p Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.
