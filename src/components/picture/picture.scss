@@ -1,0 +1,16 @@
+.picture {
+    &__ellipse-1 {
+        width: 110px;
+        height: 110px;
+        border: 1px solid #E0E0E0;
+        border-radius: 50%;
+        padding: 9px;
+    }
+    &__ellipse-2 {
+        width: 90px;
+        height: 90px;
+        border: 1px solid #4985FF;
+        border-radius: 50%;
+        padding: 24px;
+    }
+}
