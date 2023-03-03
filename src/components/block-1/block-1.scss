@@ -1,0 +1,28 @@
+@import '../title/title.scss';
+@import '../text/text.scss';
+@import '../services/services.scss';
+@import '../button/button.scss';
+
+.block-1 {
+    height: 703px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__title {
+        width: 739px;
+        text-align: center;
+    }
+    &__text {
+        margin: 50px 0 70px 0;
+        width: 730px;
+        text-align: center;
+    }
+    &__services {
+        display: flex;
+    }
+    &__button {
+        margin-top: 55px;
+    }
+}

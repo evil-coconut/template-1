@@ -1,0 +1,16 @@
+include ../title/title.pug
+include ../text/text.pug
+include ../services/services.pug
+include ../button/button.pug
+
+section.block-1
+    .block-1__title 
+        +title('h2', 'Мы создаем мобильные приложения для крупных корпораций', 'black')
+    .block-1__text
+        +text('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.')
+    .block-1__services
+        +services('Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.')
+        +services('Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.')
+        +services('Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.')
+    .block-1__button 
+        +button('Все услуги', '#')
