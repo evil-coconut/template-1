@@ -1,0 +1,9 @@
+mixin features(num, text)
+    .features 
+        .features__inner 
+            .features__img
+                img(src=require('../../images/features.svg'), alt="features") 
+            .features__number
+                p #{num} 
+        .features__text 
+            p #{text}
