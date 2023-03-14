@@ -1,0 +1,31 @@
+@import '../title/title.scss';
+@import '../button/button.scss';
+@import '../benefits/benefits.scss';
+
+.block-3 {
+    height: 972px;
+    &__content {
+        height: 490px;
+        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%);
+    }
+    &__wrap {
+        padding: 100px 0 0 0;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        width: 540px;
+    }
+    &__button {}
+    &__benefits {
+        margin: 70px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        border: solid #E0E0E0;
+        border-width: 0 0 1px 0;
+        padding-bottom: 85px;
+    }
+}

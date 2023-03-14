@@ -1,0 +1,16 @@
+include ../title/title.pug
+include ../button/button.pug
+include ../benefits/benefits.pug
+
+section.block-3
+    .block-3__content
+        .block-3__wrap._container
+            .block-3__inner 
+                .block-3__title 
+                    +title('h2', 'Наши работы, на которых мы специализируемся', 'white')
+                .block-3__button
+                    +button('Все услуги', '#')
+            .block-3__benefits
+                +benefits('benefits.png', 'benefits', '01', 'Исследование и упаковка', 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.', 'Подробнее', '#')
+                +benefits('benefits.png', 'benefits', '01', 'Исследование и упаковка', 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.', 'Подробнее', '#')
+                +benefits('benefits.png', 'benefits', '01', 'Исследование и упаковка', 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.', 'Подробнее', '#')
