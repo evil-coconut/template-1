@@ -1,0 +1,22 @@
+@import '../title/title.scss';
+@import '../text/text.scss';
+@import '../link/link.scss';
+
+.benefits {
+    width: 350px;
+    height: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__img {}
+    &__title {
+        display: flex;
+        p {
+            color: #4985FF;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    &__text {}
+    &__link {}
+}

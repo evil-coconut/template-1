@@ -1,0 +1,15 @@
+include ../title/title.pug
+include ../text/text.pug
+include ../link/link.pug
+
+mixin benefits(img, alt, num, title, text, link, href)
+    .benefits 
+        .benefits__img 
+            img(src=require('../../images/' + img), alt=alt) 
+        .benefits__title
+            p=num + '.' 
+            +title('h3', title, 'black')
+        .benefits__text 
+            +text(text)
+        .benefits__link
+            +link(link, href)
