@@ -1,5 +1,7 @@
 @import './components/header/header.scss';
 @import './components/block-1/block-1.scss';
+@import './components/block-2/block-2.scss';
+@import './components/block-3/block-3.scss';
 
 * {
     margin: 0;
@@ -14,3 +16,7 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+._container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
