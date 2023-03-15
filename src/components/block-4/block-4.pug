@@ -1,0 +1,18 @@
+include ../title/title.pug
+include ../text/text.pug
+include ../img-link/img-link.pug
+include ../button/button.pug
+
+section.block-4
+    .block-4__content._container 
+        .block-4__title 
+            +title('h2', 'Наши проекты', 'black')
+        .block-4__text 
+            +text('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. ')
+        .block-4__img-link 
+            +img-link('img-link.png', 'img-link', '#')
+            +img-link('img-link.png', 'img-link', '#')
+            +img-link('img-link.png', 'img-link', '#')
+            +img-link('img-link.png', 'img-link', '#')
+        .block-4__button
+            +button('Все проекты', '#')

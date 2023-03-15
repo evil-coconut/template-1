@@ -1,0 +1,30 @@
+@import '../title/title.scss';
+@import '../text/text.scss';
+@import '../img-link/img-link.scss';
+@import '../button/button.scss';
+
+.block-4 {
+    height: 776px;
+    background: #F6F6F8;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin: 100px 0 50px 0;
+    }
+    &__text {
+        max-width: 730px;
+        text-align: center;
+    }
+    &__img-link {
+        width: 1110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 70px 0 50px 0;
+    }
+    &__button {}
+}
