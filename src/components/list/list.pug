@@ -1,0 +1,20 @@
+include ../title/title.pug
+
+mixin list(title, icon, obj)
+    .list 
+        .list__title 
+            +title('h3', title, 'black')
+        .list__list 
+            if icon
+                ul.list__body
+                    each val, key in obj
+                        li.list__item
+                            img.list__img(src=require('../../images/' + val), alt="")
+                            p #{key} 
+            else 
+                ul.list__body
+                    each val, key in obj
+                        li.list__item
+                            img.list__img(src=require('../../images/arrow.svg'), alt="")
+                            a.list__link(href=val) #{key} 
+            
