@@ -1,0 +1,12 @@
+include ../title/title.pug
+include ../text/text.pug
+
+.block-6._container 
+    .block-6__title
+        +title('h3', 'Подпишитесь на нашу рассылку', 'black') 
+    .block-6__text
+        +text('Полезные статьи, акции, новости - получите все это сейчас!')
+    .block-6__email 
+        include ../email/email.pug
+    .block-6__small-text
+        p Мы не шлем спам, и передаем никому ваши данные.
