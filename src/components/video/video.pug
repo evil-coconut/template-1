@@ -1,0 +1,10 @@
+#video.video 
+    .video__content 
+        a(href="#popup").video__button 
+            img(src=require('../../images/play-button.svg'), alt='play-button') 
+            p.video__text Смотреть видео
+        .video__popup 
+            #popup.popup 
+                .popup__body
+                    a(href="#video").popup__close
+                    iframe(width="560" height="315" src="https://www.youtube.com/embed/JxS5E-kZc2s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen) 
