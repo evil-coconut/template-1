@@ -4,6 +4,7 @@
 @import './components/block-3/block-3.scss';
 @import './components/block-4/block-4.scss';
 @import './components/block-5/block-5.scss';
+@import './components/block-6/block-6.scss';
 
 * {
     margin: 0;
@@ -13,7 +14,9 @@
 a {
     text-decoration: none;
 }
-
+input {
+    outline:none;
+}
 body {
     font-family: Montserrat, sans-serif;
 }
