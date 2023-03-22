@@ -1,0 +1,14 @@
+include ../title/title.pug
+include ../text/text.pug
+
+
+section.block-5 
+    .block-5__content
+        ._container 
+            .block-5__inner
+                .block-5__title 
+                    +title('h2', 'Видео о нашей работе', 'white')
+                .block-5__text 
+                    +text('Просто посмотрите, как мы работаем')
+                .block-5__video
+                    include ../video/video.pug
