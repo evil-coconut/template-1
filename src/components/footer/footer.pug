@@ -1,0 +1,30 @@
+include ../list/list.pug
+
+footer.footer
+    .footer__content._container 
+        .footer__list 
+            +list('Контактная информация', true, {
+                'test@test.ru': 'mail.svg',
+                '+8 777 555 66 99': 'phone.svg',
+                'Москва, Бульвар Ленина 33': 'place.svg'
+                })
+            +list('Основные ссылки', false, {
+                'Главная': '#',
+                'Наши проекты': '#',
+                'Наши услуги': '#',
+                'Контакты': '#'
+                })
+            +list('Наши проекты', false, {
+                'РосНано': '#',
+                'Сколково': '#',
+                'Проект “Восток”': '#',
+                'ТЭЦ Калининграда': '#'
+                })
+            +list('Социальные сети', false, {
+                'VK.com': '#',
+                'Instagram': '#',
+                'Facebook': '#',
+                'Twitter': '#'
+                })
+        .footer__copyright
+            p (с) 2019. Все права защищены.

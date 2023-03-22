@@ -1,0 +1,30 @@
+@import '../list/list.scss';
+
+.footer {
+    height: 413px;
+    background: #F6F6F8;
+    &__content {
+        padding: 70px 0 0 0;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid #E0E0E0;
+        border-width: 0 0 1px 0;
+        padding: 0 0 70px 0;
+    }
+    &__copyright {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: #999999;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
