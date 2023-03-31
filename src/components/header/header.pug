@@ -3,19 +3,20 @@ include ../title/title.pug
 include ../button/button.pug
 
 header.header
-    .header__inner
-        .header__nav
-            +nav({
-                'Главная': '#',
-                'Наши проекты': '#',
-                'Услуги': '#',
-                'Новости': '#',
-                'Контакты': '#',
-            })
-    .header__column
-        .header__text 
-            span Передовая IT студия
-        .header__title 
-            +title('h1', 'Мы создаем легкие решения сложных задач и проблем', 'white')
-        .header__button
-            +button('Наши проекты', '#')
+    .header__content
+        .header__inner
+            .header__nav
+                +nav({
+                    'Главная': '#',
+                    'Наши проекты': '#',
+                    'Услуги': '#',
+                    'Новости': '#',
+                    'Контакты': '#',
+                })
+        .header__column
+            .header__text 
+                span Передовая IT студия
+            .header__title 
+                +title('h1', 'Мы создаем легкие решения сложных задач и проблем', 'white')
+            .header__button
+                +button('Наши проекты', '#')

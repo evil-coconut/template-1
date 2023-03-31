@@ -3,8 +3,13 @@
 @import '../button/button.scss';
 
 .header{
-    background-image: url('../../images/header-background.png');
+    width: 1920px;
     height: 900px;
+    background: url('../../images/header-background.png') no-repeat;
+    margin: 0 auto;
+    &__content {
+        
+    }
     &__inner {
         padding-bottom: 40px;
         border: solid #A1A1A1;
