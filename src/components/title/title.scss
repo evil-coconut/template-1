@@ -17,10 +17,20 @@
         line-height: 22px;
         letter-spacing: 0em;
     }
+    @media (min-width: 480px) and (max-width: 767px) {
+        &__h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
     @media (min-width: 320px) and (max-width: 479px) {
         &__h1 {
             font-size: 30px;
             line-height: 40px;
+        }
+        &__h2 {
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }

@@ -5,25 +5,47 @@
 
 .block-1 {
     &__content {
-        height: 703px;
+        padding: 110px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media (min-width: 320px) and (max-width: 479px) {
+            padding: 50px 0 ;
+        }
     }
     &__title {
         width: 739px;
         text-align: center;
+        @media (min-width: 480px) and (max-width: 767px) {
+            width: 450px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 300px;
+        }
     }
     &__text {
         margin: 50px 0 70px 0;
         width: 730px;
         text-align: center;
+        @media (min-width: 480px) and (max-width: 767px) {
+            margin: 10px 0 50px 0;
+            width: 450px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            margin: 10px 0 50px 0;
+            width: 310px;
+        }
     }
     &__services {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     &__button {
-        margin-top: 55px;
+        margin: 55px 0 0 0;
+        @media (min-width: 320px) and (max-width: 479px) {
+            margin: 30px 0 0 0;
+        }
     }
 }

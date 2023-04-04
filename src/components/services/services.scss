@@ -5,6 +5,10 @@
     width: 353px;
     height: 139px;
     display: flex;
+    margin: 10px 0;
+    @media (min-width: 320px) and (max-width: 479px) {
+        width: 319px;
+    }
     &__img {}
     &__title {
         margin-bottom: 12px;
@@ -12,6 +16,9 @@
     &__inner {
         margin-left: 17px;
         align-self: flex-end;
+        @media (min-width: 320px) and (max-width: 479px) {
+            margin-left: 5px;
+        }
     }
     &__text {
         color: #999999;
@@ -20,5 +27,8 @@
         line-height: 22px;
         letter-spacing: 0em;
         width: 222px;
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 200px;
+        }
     }
 }
