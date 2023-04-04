@@ -1,5 +1,11 @@
 mixin nav(obj)
-    ul.nav
-        each val, key in obj
-            li.nav__item
-                a.nav__link(href=val) #{key} 
+    .nav
+        #icon-nav.nav__icon
+            span
+            span
+            span
+        nav.nav__body
+            ul.nav__list
+                each val, key in obj
+                    li.nav__item
+                        a.nav__link(href=val) #{key} 
