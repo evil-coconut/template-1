@@ -3,15 +3,13 @@
 @import '../button/button.scss';
 
 .header{
-    width: 1920px;
+    width: 100%;
     height: 900px;
-    background: url('../../images/header-background.png') no-repeat;
+    background: url('../../images/header-background.png') no-repeat top center;
     margin: 0 auto;
-    &__content {
-        
-    }
+    &__content {}
     &__inner {
-        padding-bottom: 40px;
+        padding-bottom: 4.5vh;
         border: solid #A1A1A1;
         border-width: 0 0 1px 0;
         display: flex;
@@ -19,7 +17,8 @@
     }
     &__nav {
         width: 563px;
-        margin: 40px 400px 0 0;
+        margin: 4.4vh 21vw 0 15vw;
+        
     }
     &__column {
         display: flex;
@@ -41,5 +40,36 @@
     }
     &__button {
         margin-top: 40px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        &__title {
+            width: 700px;
+        }
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+        &__nav {
+            width: 450px;
+            margin: 4.4vh 3vw 0 1vw;
+        }
+        &__title {
+            width: 450px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 479px) {
+        &__nav {
+            display: flex;
+            justify-content: flex-end;
+            margin: 3vh 2vh;
+        }
+        &__inner {
+            border: none;
+            padding: 0;
+        }
+        &__title {
+            width: 300px;
+        }
+        &__column {
+            margin-top: 120px;
+        }
     }
 }
