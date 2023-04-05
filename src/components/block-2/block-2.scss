@@ -4,9 +4,11 @@
 @import '../features/features.scss';
 
 .block-2 {
-    height: 797px;
     background: #F6F6F8;
-    padding: 90px 0 0 0;
+    padding: 90px 0 70px 0;
+    @media (min-width: 320px) and (max-width: 479px) {
+        padding: 40px 0 40px 0;
+    }
     &__content {}
     &__wrap {
         display: flex;
@@ -15,6 +17,20 @@
         padding-bottom: 80px;
         border: solid #E0E0E0;
         border-width: 0 0 1px 0;
+        margin: 0 10px;
+        @media (min-width: 768px) and (max-width: 991px) {
+            flex-direction: column;
+        }
+        @media (min-width: 480px) and (max-width: 767px) {
+            flex-direction: column;
+        }
+        @media (min-width: 480px) and (max-width: 520px) {
+            padding-bottom: 40px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
     }
     &__inner {
         width: 489px;
@@ -22,15 +38,29 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (min-width: 480px) and (max-width: 520px) {
+            width: 450px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 310px;
+        }
     }
     &__title {}
     &__text {}
     &__link {}
-    &__img {}
+    &__img img {
+        @media (min-width: 480px) and (max-width: 520px) {
+            width: 450px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 310px;
+        }
+    }
     &__features {
         display: flex;
         justify-content: space-around;
         margin-top: 60px;
+        flex-wrap: wrap;
     }
 
 }
