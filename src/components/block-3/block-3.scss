@@ -15,11 +15,31 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 10px;
+        @media (min-width: 480px) and (max-width: 767px) {
+            flex-direction: column;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            flex-direction: column;
+        }
     }
     &__title {
         width: 540px;
+        @media (min-width: 480px) and (max-width: 767px) {
+            width: 450px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 310px;
+        }
     }
-    &__button {}
+    &__button {
+        @media (min-width: 480px) and (max-width: 767px) {
+            margin-top: 20px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            margin-top: 20px;
+        }
+    }
     &__benefits {
         margin: 70px 0 0 0;
         display: flex;
@@ -27,5 +47,16 @@
         border: solid #E0E0E0;
         border-width: 0 0 1px 0;
         padding-bottom: 85px;
+        flex-wrap: wrap;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding: 0 10px;
+            justify-content: center;
+        }
+        @media (min-width: 480px) and (max-width: 767px) {
+            justify-content: center;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            justify-content: center;
+        }
     }
 }
