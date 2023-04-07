@@ -3,12 +3,11 @@
 @import '../benefits/benefits.scss';
 
 .block-3 {
-    height: 972px;
+    min-height: 972px;
+    padding: 0 0 85px 0;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) no-repeat;
+    background-size: 100% 50%;
     &__content {
-        height: 490px;
-        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%);
-    }
-    &__wrap {
         padding: 100px 0 0 0;
     }
     &__inner {
