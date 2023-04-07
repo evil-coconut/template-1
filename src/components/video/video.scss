@@ -8,6 +8,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 750px;
+        }
+        @media (min-width: 480px) and (max-width: 767px) {
+            width: 470px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            width: 310px;
+            height: 350px;
+        }
     }
     &__button {
         background: rgba(0, 0, 0, .0);
@@ -19,7 +29,7 @@
         align-items: center;
         justify-content: center;
     }
-    &__button:focus, &__button:hover         {
+    &__button:focus, &__button:hover {
         cursor: pointer;
     }
     &__text {
