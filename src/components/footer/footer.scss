@@ -4,11 +4,12 @@
     height: 413px;
     background: #F6F6F8;
     &__content {
-        padding: 70px 0 0 0;
+        padding: 50px 0 0 0;
     }
     &__list {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         border: solid #E0E0E0;
         border-width: 0 0 1px 0;
