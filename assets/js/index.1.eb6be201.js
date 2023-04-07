@@ -1,0 +1,1 @@
+(()=>{let e=document.getElementById("icon-nav"),t=document.getElementsByClassName("nav__icon"),n=document.getElementsByClassName("nav__body");e.onclick=function(){t[0].classList.toggle("_active"),n[0].classList.toggle("_active")}})();
