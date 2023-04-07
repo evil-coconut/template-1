@@ -4,8 +4,19 @@
 
 .block-5 {
     height: 735px;
+    @media (min-width: 320px) and (max-width: 479px) {
+        height: 600px
+    }
+    &__content {
+        max-width: 1920px;
+        height: 570px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../../images/header-background.png') no-repeat;
+
+        padding: 70px 0 0px 0;
+        margin: 0 auto;
+    }
     &__inner {
-        width: 1110px;
+        max-width: 1110px;
 
         display: flex;
         flex-direction: column;
@@ -14,15 +25,11 @@
 
         border: solid #E0E0E0;
         border-width: 0 0 1px 0;
-        padding: 0 0 75px 0 ;
-    }
-    &__content {
-        width: 1920px;
-        height: 570px;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../../images/header-background.png') no-repeat;
-
-        padding: 70px 0 0px 0;
-        margin: 0 auto;
+        padding: 0 0 75px 0;
+        @media (min-width: 320px) and (max-width: 479px) {
+            border: none;
+            padding: 0;
+        }
     }
     &__title {}
     &__text {
